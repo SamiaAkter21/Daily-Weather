@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function fetchWeatherData() {
     try{
         const API_KEY = '911db19fc4fe417ab62105956242904';
-        const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=Dhaka&days=7`;
+        const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=Dhaka&days=7`;
         const response = await fetch(API_URL);
 
         if (!response.ok) {
